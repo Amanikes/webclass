@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="/register" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Full Name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Email Address" required><br><br>
+
+       <label for="telephone">Telephone:</label>
+        <input type="tel" name="telephone" placeholder="Telephone Number" required><br><br>
+
+        <label for="year">Year of Study:</label>
+        <input type="radio" name="year" value="1" placeholder="Year of Study" required> 1st Year
+        <input type="radio" name="year" value="2" placeholder="Year of Study" required> 2nd Year
+        <input type="radio" name="year" value="3" placeholder="Year of Study" required> 3rd Year
+        <input type="radio" name="year" value="4" placeholder="Year of Study" required> 4th Year<br><br>
+
+        <label for="interest">Interest:</label>
+        <input type="checkbox" name="interest" value="ML"> Machine Learning
+        <input type="checkbox" name="interest" value="AI"> Artificial Intelligence
+        <input type="checkbox" name="interest" value="Web Development"> Web Development<br><br>
+
+        <label for="department">Department</label>
+        <select name="department" required>
+            <option value="">Select Department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Software Engineering">Software Engineering</option>
+        </select><br><br>
+
+            <label for="essay">Why Join Us:</label>
+        <textarea name="essay" rows="4" cols="50" placeholder="Write your essay here..." required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </form>
+    </body>
+    </html>
